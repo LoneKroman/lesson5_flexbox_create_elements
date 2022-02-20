@@ -1,6 +1,7 @@
 
 body {
     margin: 0;
+    padding: 0;
     background-color: #E5E5E5;    
 }
 
@@ -12,11 +13,12 @@ main {
 
 /*first_section_squares*/
 
-.section_one_squares {
+.section_one_squares {  
     display: flex;    
     width: 1152px;
     min-height: 100vh;
     background-color: #370617;   
+    margin-bottom: 20px;
 }
 
 .rectangles {
@@ -176,17 +178,17 @@ main {
     height: 160px;
     background-color: #F48C06;
     display: flex;    
-    justify-content: space-evenly;  
-    align-items: stretch;
+    justify-content: space-evenly;   
 }
 
 .rectfive_red_square_one {
     width: 78px;
     min-height: 78px;    
     background: #9D0208;
-    border-radius: 4px;
+    border-radius: 4px; 
+    align-self: stretch; 
     margin-top: 20px;
-    margin-bottom: 20px;    
+    margin-bottom: 20px;     
 } 
 
 .rectfive_red_square_two {
@@ -194,7 +196,10 @@ main {
     height: 78px;    
     background: #9D0208;
     border-radius: 4px; 
-    margin-top: 20px;    
+    margin-top: 20px;
+    margin-bottom: 20px;
+    align-self: baseline;
+    align-self: center;
 } 
 
 .rectfive_red_square_three {
@@ -202,9 +207,27 @@ main {
     min-height: 78px;    
     background: #9D0208;
     border-radius: 4px; 
-    margin-top: 20px; 
-    margin-bottom: 20px;   
+    align-self: stretch; 
+    margin-top: 20px;
+    margin-bottom: 20px; 
 } 
+
+p {   
+    width: 78px; 
+    height: 14px;
+    font-family: sans-serif;
+    text-align: center;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    color: #FFFFFF;   
+}
+
+.text1, .text3 {
+    margin-top: 20px;
+    padding-top: 12px;
+}
 
 .rectangle_six {
     width: 468px;
@@ -241,7 +264,7 @@ main {
     margin-right: 20px;    
 } 
 
-/*second_section_squares*/
+/*SECOND SECTION SQUARES*/
 
 .section_two_circles {
     margin-top: 20px;  
@@ -255,44 +278,483 @@ main {
 .squares {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
     align-content: center;
-    margin: 20px;
+    justify-content: center;
+    margin: 0px;
     padding: 20px;   
 }
 
 .square_one {
-  width: 273px;
-    height: 220px; 
-    margin: 20px;
+    width: 273px; 
+    height: 220px;
     background-color: #03071E;
-}    
+    padding: 0px;
+    margin-right: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}  
+
+.squaone_circle_one {    
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 0px;
+    margin-bottom: -20px;
+    background-color: #748CAB;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+.squaone_circle_two {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 0px;
+    margin-bottom: -20px;
+    background-color: #748CAB;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+.squaone_circle_three {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 0px;
+    margin-bottom: -20px;
+    background-color: #748CAB;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+.squaone_circle_four {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin-top: -20px;
+    margin-left: 20px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    background-color: #748CAB;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+.squaone_circle_five {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin-top: -20px;
+    margin-left: 20px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    background-color: #748CAB;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+}
 
 .square_two {
     width: 273px;
     height: 220px; 
-    margin: 20px;
+    padding: 0px;
+    margin-right: 20px;
     background-color: #6A040F;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: flex-end;
+}
+
+.squatwo_circle_one {    
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin-top: -20px;
+    margin-left: 0px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    background-color: #748CAB;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+.squatwo_circle_two {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin-top: -20px;
+    margin-left: 0px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    background-color: #748CAB;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+.squatwo_circle_three {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin-top: -20px;
+    margin-left: 0px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    background-color: #748CAB;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+.squatwo_circle_four {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 20px;
+    margin-bottom: -20px;
+    background-color: #748CAB;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+.squatwo_circle_five {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 20px;
+    margin-bottom: -20px;
+    background-color: #748CAB;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
 }
 
 .square_three {
     width: 273px;
-    height: 220px;  
-    margin: 20px; 
+    height: 220px;   
+    padding: 0px;
+    margin-right: 20px;
     background-color: #03071E;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: space-between;
+}
+
+.squathree_circle_one {    
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 0px;
+    margin-bottom: -20px;
+    background-color: #748CAB;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+.squathree_circle_two {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 0px;
+    margin-bottom: -20px;
+    background-color: #748CAB;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+.squathree_circle_three {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: -20px;
+    background-color: #748CAB;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+.squathree_circle_four {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;   
+    margin-bottom: 20px;
+    margin-left: 20px;
+    background-color: #748CAB;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+.squathree_circle_five {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;    
+    margin-bottom: 20px;
+    margin-left: 20px;
+    background-color: #748CAB;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+.squathree_circle_six {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%; 
+    margin-bottom: 20px;
+    margin-left: 20px;   
+    margin-right: 20px;
+    background-color: #748CAB;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
 }
 
 .square_four {
     width: 273px;
-    height: 220px;   
-    margin: 20px;
+    height: 220px;
+    padding: 0px;
+    margin-top: 20px; 
+    margin-right: 20px; 
     background-color: #6A040F;
-    align-self: flex-start;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+}
+
+.squafour_circle_one {    
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin-top: 0px;
+    margin-left: 20px;
+    margin-right: 0px;
+    margin-bottom: 20px;
+    background-color: #748CAB;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+.squafour_circle_two {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin-top: 0px;
+    margin-left: 20px;
+    margin-right: 0px;
+    margin-bottom:-20px;
+    background-color: #748CAB;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+.squafour_circle_three {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin-top: 0px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    background-color: #748CAB;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+.squafour_circle_four {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin-top: -20px;
+    margin-left: 20px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    background-color: #748CAB;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+.squafour_circle_five {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin-top: -20px;
+    margin-left: 20px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    background-color: #748CAB;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+.squafour_circle_six {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin-top: -20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 0px;
+    background-color: #748CAB;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
 }
 
 .square_five {
     width: 273px;
     height: 220px;
-    margin: 20px;
+    padding: 0px;
+    margin-top: 20px;
+    margin-right: 20px;
     background-color: #03071E;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
+.squafive_circle_one {    
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    background-color: #748CAB;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+.squafive_circle_two {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 0px;
+    margin-bottom:0px;
+    background-color: #748CAB;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+.squafive_circle_three {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 0px;
+    background-color: #748CAB;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+.squafive_circle_four {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin-top: 0px;
+    margin-left: 20px;
+    margin-right: 0px;
+    margin-bottom: 20px;
+    background-color: #748CAB;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+.squafive_circle_five {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin-top: 0px;
+    margin-left: 20px;
+    margin-right: 0px;
+    margin-bottom: 20px;
+    background-color: #748CAB;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+.squafive_circle_six {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin-top: 0px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    background-color: #748CAB;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+.square_six {
+    width: 273px;
+    height: 220px;
+    padding: 0px;
+    margin-top: 20px;
+    margin-right: 20px;
+    background-color: #FAA307;
+}
+
+.squasix_circle_one {    
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 0px;
+    margin-bottom: -20px;
+    background-color: #748CAB;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+.squasix_circle_two {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 0px;
+    margin-bottom: -20px;
+    background-color: #748CAB;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+.squasix_circle_three {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 0px;
+    margin-bottom: -20px;
+    background-color: #748CAB;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+.squasix_circle_four {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin-top: -20px;
+    margin-left: 20px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    background-color: #748CAB;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+.squasix_circle_five {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin-top: -20px;
+    margin-left: 20px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    background-color: #748CAB;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+.squasix_circle_six {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin-top: -20px;
+    margin-left: 20px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    background-color: #748CAB;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+ 
